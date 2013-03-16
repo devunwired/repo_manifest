@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Element defining where to pull code from, can have more than one -->
+  <remote  name="upstream"
+           fetch=".." />
+  <!-- Reference to the remote element to use when none specified for each project -->
+  <default revision="master"
+           remote="upstream" />
+
+  <project path="platform/core" name="repo_platform" />
+  <project path="platform/frameworks" name="repo_frameworks" />
+  <project path="applications/main" name="repo_application" />
+
+</manifest>
