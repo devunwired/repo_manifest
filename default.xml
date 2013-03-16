@@ -3,7 +3,7 @@
 
   <!-- Element defining where to pull code from, can have more than one -->
   <remote  name="upstream"
-           fetch=".." />
+           fetch="../devunwired" />
   <!-- Reference to the remote element to use when none specified for each project -->
   <default revision="refs/tags/v3"
            remote="upstream" />
