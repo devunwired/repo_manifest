@@ -5,11 +5,16 @@
   <remote  name="upstream"
            fetch=".." />
   <!-- Reference to the remote element to use when none specified for each project -->
-  <default revision="master"
+  <default revision="refs/tags/v3"
            remote="upstream" />
 
+  <!--
+    Project elements: name must match remote repo name, path is destination directory for clone.
+    May add a remote or revision attribute to override defaults.
+    Revision can be branch, tag, or SHA
+  -->
   <project path="platform/core" name="repo_platform" />
   <project path="platform/frameworks" name="repo_frameworks" />
-  <project path="applications/main" name="repo_application" />
+  <project path="applications/main" name="repo_application" revision="experiment" />
 
 </manifest>
