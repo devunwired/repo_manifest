@@ -5,7 +5,7 @@
   <remote  name="upstream"
            fetch=".." />
   <!-- Reference to the remote element to use when none specified for each project -->
-  <default revision="master"
+  <default revision="refs/tags/v1"
            remote="upstream" />
 
   <project path="platform/core" name="repo_platform" />
